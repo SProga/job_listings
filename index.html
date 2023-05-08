@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Job Listings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main>
+      <div class="container jobs_container">
+        <div class="filter__jobs_field">
+          <button class="btn__clear">Clear</button>
+        </div>
+        <div class="cards_container"></div>
+      </div>
+    </main>
+
+    <div class="card card_template">
+      <img alt="" class="job__image" />
+      <div class="job__wrapper px-2">
+        <div class="job__description">
+          <div class="job__quick_info">
+            <div class="job__name"></div>
+          </div>
+          <div class="my-2 job__title"></div>
+          <div class="my-2 job__other_info">
+            <div class="days_ago"></div>
+            <div class="job__type"></div>
+            <div class="job__location"></div>
+          </div>
+        </div>
+        <div class="job__tags">
+          <div class="tag_role tag"></div>
+          <div class="tag_level tag"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">SProga</a>.
+    </div>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
